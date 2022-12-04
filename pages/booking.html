@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <link rel="stylesheet" href="../style.css">
+    <title>Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <header>
+        <ul id="meny">
+            <li><a href="../index.html">Hjem</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="meny.html">Meny</a></li>
+            <li><a href="tilgjengelighet.html">Tilgjengelighet</a></li>
+            <li><a href="tema.html">Tema</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <h1>Booking</h1>
+
+        <p>Lokalene vår er tilgjengelig for utleie! Uansett om det er bursdag, bryllupsfest, julebord eller
+            lønningspils vil vi gjøre vårt ytterste for at dere får en hyggelig kveld. Våre lokaler har plass til
+            50 personer. Vår <a href="https://goo.gl/maps/aMdDaK9qWgimX2Vx8" title="Google maps" target="_blank">plassering</a> 
+            midt i sentrum er både praktisk og spennende. Fyll ut skjemaet under for å sende inn din reservasjon!
+        </p>
+
+        <form>
+            <div class="container">
+                <label for="dato">Dato:</label>
+                <input type="date" id="dato" name="dato">
+
+                <label for="tid">Tidspunkt:</label>
+                <input type="time" id="tid" name="tid">
+
+                <label for="antall">Antall:</label>
+                <input type="text" id="antall" name="antall">
+                
+                <label for="navn">Fullt navn:</label>
+                <input type="text" id="navn" name="navn">
+                <label for="phone">Telefonnummer: </label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{8}">
+                <label for="email">Epost-adresse:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            
+            <div class="radio">
+                <input type="radio" id="inne" name="inneUte" value="inne">
+                <label for="inne">Innendørs</label>
+                <input type="radio" id="ute" name="inneUte" value="ute">
+                <label for="ute">Utendørs</label>
+            </div>
+    
+            <input type="submit" value="Send inn" id="knapp">
+    
+        </form> 
+
+
+    </main>
+ 
+    
+   
+    <footer>
+        <div>
+        <h1>Kontakt oss</h1>
+        <ul>
+            <li>Telefon: 12345678</li>
+            <li>Epost: eksempel@hotmail.no</li>
+            <li>Adresse: Osloveien 248, 0260 Oslo</li>
+        </ul>
+        </div>
+        
+        <div>
+        <h1>Åpningstider</h1>
+        <ul>
+            <li>Man: stengt</li>
+            <li>Tir-Tor: 16:00 - 23:00</li>
+            <li>Fre-Lør: 14:00 - 01:00</li>
+            <li>Søn: 14 - 22:00</li>
+        </ul>
+        </div>
+    </footer>
+ 
+ 
+ 
+</body>
+</html>
