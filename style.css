@@ -7,13 +7,14 @@
 /*ØVERSTE BILDET*/
 header{
     background-image: url(images/pexels-chan-walrus-941861.jpg);
+    /*Bilde fra Chan Walrus, hentet fra https://www.pexels.com/nb-no/bilde/interiordesign-rom-vin-stol-941861/ */
     height: 500px;
     background-position: center;
     background-size: cover;
 }
 
 
-/*STYLER MENYEN-BAREN*/
+/*STYLER MENY-BAREN*/
 header ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -40,6 +41,16 @@ header ul li a:hover{       /*Hoover-effekt*/
     color: #F8F0E3;
 }
 
+/*STYLER MENY-BAREN NÅR LITEN SKJERM*/
+@media screen and (max-width: 850px){
+    header ul{
+        display:grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        row-gap: 1rem;
+    }
+}
 
 /*STYLER MAIN*/
 main{
@@ -55,13 +66,13 @@ main p, main h1, main h2, main h3, main dl{     /*Styler tekst*/
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+main a{
+    color: #F8F0E3;
+}
+
 main h1{    /*Styler overskrifter*/
     font-size: 3em;
     text-transform: uppercase;
-}
-
-main a{
-    color: #F8F0E3;
 }
 
 p{
@@ -83,7 +94,7 @@ p{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.bunnBilde{
+.bunnBilde{     /*Sørger for overlayen når man holder musepeker over bilder*/
     position: relative;
     padding: 2rem;
 }
@@ -140,6 +151,7 @@ footer{
 
 footer ul{
     list-style-type: none;
+    color: black;
 }
 
 footer h1{
@@ -178,16 +190,9 @@ label{
     font-size: 1.5rem;
 }
 
-
-
-
-
-/*Når liten skjerm: rullemeny?*/
-
-
 /*STYLER MENY-SIDEN*/
 dl{
-    padding: 0rem 1rem 5rem 1rem;   /*top, right, bottom, left*/
+    padding: 0rem 1rem 5rem 1rem;
 }
 
 dt{
@@ -200,24 +205,61 @@ dd{
     font-style: italic;
 }
 
-.matmeny h1{
+.matmeny ul{
+    color: #F8F0E3; 
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+
+.matmeny ul li{
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+.matmeny h2{
     font-size: 3rem;
     text-transform: uppercase;
     padding: 2rem;
 }
 
-.matmeny h2{
+.matmeny h3{
     font-size: 2rem;
     text-transform: uppercase;
-    text-decoration: underline;
 }
 
-.matmeny{
+.matmeny{       /*Setter bakgrunnsfarge og bord for å gi "meny"-effekt*/
     border: solid;
     border-color:rgb(100, 30, 30);
     border-width: 0.5rem;
     background-color: #803c37;
-    margin: 3rem 10rem;
+    margin: 2rem 8rem;
+}
+
+.undermeny{     /*Styler valgene om å gå direkte til kategori*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    color: #F8F0E3; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1.5rem;
+}
+
+@media screen and (max-width: 850px){
+    .matmeny{       /*Fjerner litt margin for å få bedre plass til tekst*/
+        margin: 1rem;
+    }
+
+    .undermeny{     /*Gjør undermenyen vertikal når liten skjerm*/
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
 }
 
 /*STYLER TEMASIDE*/
@@ -239,11 +281,14 @@ dd{
     grid-row: 1/2;
 }
 
+@media screen and (max-width: 850px){
+    .boks{      /*Setter bildet og tekst under hverandre*/
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 1.5rem;
+    }
 
-
-
-
-
-
-
-
+    .kvinne{        /*Snur rekkefølgen på bildet*/
+        grid-row: 2;
+    }
+}

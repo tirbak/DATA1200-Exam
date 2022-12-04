@@ -18,29 +18,53 @@
     </header>
 
     <main>
-        <p>Bruker break i formet</p>
+        <h1>Tilgjengelighet</h1>
+
+        <p>
+            Alle sidene på denne nettsiden er validert av <a href="https://validator.w3.org/#validate_by_upload" title="w3.org" target="_blank">W3C Markup Validation Sevice</a> via filopplasting. Tjenesten fant ingen 
+            feil i HTML-filene. CSS-koden er også validert via <a href="https://jigsaw.w3.org/css-validator/#validate_by_upload" title="w3.org" target="_blank">W3C CSS Validation Service</a>, og heller ikke her ble det funnet noen feil. 
+            Nettsiden er også sjekket av WAVE (web accessibility evaluation tool), via nettleser-utvidelsen deres. Denne utvidelsen sjekket både HTML-semantikken, men også
+            at fargekontrastene er sterke nok. Den fant ingen feil, 
+            kun en advarsel angående radioknappene på bookingsidene. Denne advarselen ble undersøkt, med ble besluttet å ikke være 
+            relevant i denne sammenhengen. Det er i tillegg sjekket at sidene kan navigeres ved bruk av tab. 
+        </p>
+
+        <p>
+        Under utviklingen av koden har det vært fokus på å lage korrekt og tilgjengelig kode. Detter blant annet gjort ved å bruke strukturelle 
+        semantiske tagger som &lt;header&gt; og &lt;footer&gt;, brukt av alt og titler på alle bilder, og riktig bruk av headinger. 
+        Det er i størst mulig grad unngått å bruk HTML-koden til å utvikle designet til nettsiden. Et eksempel på dette er under 
+        temasiden der det var behov for å bytte om hva som kom først og sist av bilder og tekst. Istedenfor å flytte om på rekkefølgen 
+        i HTML-filen brukes CSS til å bytte plassering på disse. Det er dog gjort visse endringer i HTML-siden, men dette er i hovedsak
+        å legge til &lt;div&gt; der det har vært nødvendig. Det er i størst mulig grad forsøkt å bruke riktige semantiske tagger for innholdet. 
+        </p>
+        <p>
+            Det er gjort tilpasninger i CSS-koden for mindre skjermer der dette har vært nødvendig, slik som i meny-barer, og side-ved-side 
+            bilder og tekst (som i tema-siden). Dette gjør at nettsiden også er lett å navigere på mindre skjermer. Alle lenker har behold 
+            understreker for å gjøre det tydelig hva som kan klikkes på, og alle lenker har titler som forteller hvilken nettside man blir 
+            sendt videre til. Alle sidene har tydelige overskrifter som viser til hvilken side man er på. 
+        </p>
     </main>
  
     
    
     <footer>
         <div>
-        <h1>Kontakt oss</h1>
-        <ul>
-            <li>Telefon: 12345678</li>
-            <li>Epost: eksempel@hotmail.no</li>
-            <li>Adresse: Osloveien 248, 0260 Oslo</li>
-        </ul>
+            <h1>Kontakt oss</h1>
+            <ul>
+                <li>Telefon: 12345678</li>
+                <li>Epost: eksempel@hotmail.no</li>
+                <li>Adresse: Osloveien 248, 0260 Oslo</li>
+            </ul>
         </div>
         
         <div>
-        <h1>Åpningstider</h1>
-        <ul>
-            <li>Man: stengt</li>
-            <li>Tir-Tor: 16:00 - 23:00</li>
-            <li>Fre-Lør: 14:00 - 01:00</li>
-            <li>Søn: 14 - 22:00</li>
-        </ul>
+            <h1>Åpningstider</h1>
+            <ul>
+                <li>Man: stengt</li>
+                <li>Tir-Tor: 16:00 - 23:00</li>
+                <li>Fre-Lør: 14:00 - 01:00</li>
+                <li>Søn: 14:00 - 22:00</li>
+            </ul>
         </div>
     </footer>
  
